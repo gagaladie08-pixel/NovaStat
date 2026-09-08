@@ -1,0 +1,276 @@
+/* ════════════════════════════════════════════
+   15 THÈMES NOVASTATS
+════════════════════════════════════════════ */
+
+:root[data-theme="cyber-nova"] {
+    --primary: #FF006E;
+    --secondary: #00B4FF;
+    --glow: #BD00FF;
+    --bg: #050510;
+    --surface: #0D0D2B;
+    --text: #F0F0FF;
+    --text-secondary: #A0A0C0;
+    --accent: #00FFF0;
+}
+
+:root[data-theme="neon-disco"] {
+    --primary: #9B00FF;
+    --secondary: #FFD700;
+    --glow: #FF69B4;
+    --bg: #0A0010;
+    --surface: #1A0030;
+    --text: #E8E8FF;
+    --text-secondary: #B0A0C0;
+    --accent: #C0C0C0;
+}
+
+:root[data-theme="villain-era"] {
+    --primary: #CC0000;
+    --secondary: #4A4A4A;
+    --glow: #8B0000;
+    --bg: #080808;
+    --surface: #111111;
+    --text: #EEEEEE;
+    --text-secondary: #888888;
+    --accent: #FF0000;
+}
+
+:root[data-theme="slay-queen"] {
+    --primary: #FFD700;
+    --secondary: #FF1493;
+    --glow: #FFA500;
+    --bg: #0A0A0A;
+    --surface: #1A1500;
+    --text: #FFFFFF;
+    --text-secondary: #D4AF37;
+    --accent: #B76E79;
+}
+
+:root[data-theme="pink-y2k"] {
+    --primary: #FF69B4;
+    --secondary: #87CEEB;
+    --glow: #FF1493;
+    --bg: #FFF0F5;
+    --surface: #FFE4E1;
+    --text: #8B0045;
+    --text-secondary: #C06080;
+    --accent: #DA70D6;
+}
+
+:root[data-theme="velvet-stage"] {
+    --primary: #8B0000;
+    --secondary: #722F37;
+    --glow: #CFB53B;
+    --bg: #0C0008;
+    --surface: #1A0010;
+    --text: #FFF8DC;
+    --text-secondary: #D4AF37;
+    --accent: #FFD700;
+}
+
+:root[data-theme="pink-venom"] {
+    --primary: #FF0080;
+    --secondary: #FF0030;
+    --glow: #FF69B4;
+    --bg: #000000;
+    --surface: #0D0008;
+    --text: #FFFFFF;
+    --text-secondary: #FFB6C1;
+    --accent: #FF007F;
+}
+
+:root[data-theme="cloud-nine"] {
+    --primary: #FFB6C1;
+    --secondary: #E6E6FA;
+    --glow: #FFC0CB;
+    --bg: #FAFAFA;
+    --surface: #FFF5F7;
+    --text: #555555;
+    --text-secondary: #9090A0;
+    --accent: #C8A2C8;
+}
+
+:root[data-theme="solara"] {
+    --primary: #FF6B35;
+    --secondary: #C4622D;
+    --glow: #FFA500;
+    --bg: #1A0A00;
+    --surface: #2D1200;
+    --text: #FFF3E0;
+    --text-secondary: #D4A056;
+    --accent: #FFD700;
+}
+
+:root[data-theme="chaos-born"] {
+    --primary: #C0C0C0;
+    --secondary: #1A1A1A;
+    --glow: #E8E8E8;
+    --bg: #050505;
+    --surface: #111111;
+    --text: #F0F0F0;
+    --text-secondary: #909090;
+    --accent: #DFDFDF;
+}
+
+:root[data-theme="survivor"] {
+    --primary: #FF69B4;
+    --secondary: #8B00FF;
+    --glow: #FF8C00;
+    --bg: #080808;
+    --surface: #111111;
+    --text: #FFFFFF;
+    --text-secondary: #AAAAAA;
+    --accent: #00C800;
+}
+
+:root[data-theme="rainbow-pop"] {
+    --primary: #FF4DA6;
+    --secondary: #4D79FF;
+    --glow: #9B4DFF;
+    --bg: #0A0010;
+    --surface: #100020;
+    --text: #FFFFFF;
+    --text-secondary: #FFB3D9;
+    --accent: #FFD700;
+}
+
+:root[data-theme="pop-revolution"] {
+    --primary: #4A90D9;
+    --secondary: #FF6B9D;
+    --glow: #00BFFF;
+    --bg: #050A1A;
+    --surface: #0A1428;
+    --text: #FFFFFF;
+    --text-secondary: #A0C4FF;
+    --accent: #F0F8FF;
+}
+
+:root[data-theme="african-confessions"] {
+    --primary: #C4622D;
+    --secondary: #2D5A27;
+    --glow: #D4A017;
+    --bg: #120800;
+    --surface: #1E0E00;
+    --text: #FFF3E0;
+    --text-secondary: #C4922D;
+    --accent: #FFB347;
+}
+
+:root[data-theme="bad-angel"] {
+    --primary: #CC0033;
+    --secondary: #FFFFFF;
+    --glow: #FF3366;
+    --bg: #080808;
+    --surface: #141414;
+    --text: #FFFFFF;
+    --text-secondary: #AAAAAA;
+    --accent: #FF0044;
+}
+
+/* ════════════════════════════════════════════
+   STYLES GLOBAUX
+════════════════════════════════════════════ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont,
+        'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ── Composants réutilisables ──────────────── */
+.nova-card {
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.nova-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: all 0.2s ease;
+}
+
+.nova-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    background: var(--primary);
+    color: var(--bg);
+}
+
+.nova-title {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.nova-text {
+    color: var(--text);
+}
+
+.nova-text-secondary {
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.nova-primary {
+    color: var(--primary);
+}
+
+.nova-glow {
+    box-shadow: 0 0 20px var(--glow);
+}
+
+/* ── Scrollbar ────────────────────────────── */
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+/* ── Animations ───────────────────────────── */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* ── Positions Billboard ──────────────────── */
+.pos-1 { color: #FFD700; font-size: 18px; }
+.pos-2 { color: #C0C0C0; font-size: 16px; }
+.pos-3 { color: #CD7F32; font-size: 16px; }
+.pos-top10 { color: var(--primary); }
+.pos-normal { color: var(--text-secondary); }
+
+/* ── Mouvement Billboard ──────────────────── */
+.move-up { color: #2ECC71; }
+.move-down { color: #E74C3C; }
+.move-same { color: #888888; }
+.move-new { color: var(--primary); }
